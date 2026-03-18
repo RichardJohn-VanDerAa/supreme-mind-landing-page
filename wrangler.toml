@@ -1,0 +1,14 @@
+name = "supreme-mind-practice"
+type = "javascript"
+main = "src/index.ts"
+
+[build]
+command = "npm run build"
+cwd = "./"
+watch_paths = ["src/**/*.ts", "src/**/*.tsx"]
+
+[build.upload]
+format = "modules"
+main = "./dist/index.js"
+
+[env.production]
